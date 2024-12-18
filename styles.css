@@ -9,7 +9,7 @@
 header {
   position: fixed;
   width: 100%;
-  padding: 16px 16px;
+  padding: 16px 32px;
   background-color: #1E1E1E;
   border-bottom: 1px solid #444444;
 }
