@@ -162,6 +162,7 @@ header {
   width: 140px;
 }
 
+
 .auth-button:hover {
   background-color: #F5F5F5;
   color: #1E1E1E;
@@ -201,24 +202,24 @@ header {
   .header-auth {
     width: 100%;
     margin-left: 0; /* Remove margin to align with pills */
-    gap: 8px;
+    gap: 40px;
     justify-content: center;
   }
 
   .auth-button {
-    width: 140px;
+    width: 300px;
     text-align: center;
   }
 
   .sec1-auth {
     width: 100%;
     margin-left: 0; /* Remove margin to align with pills */
-    gap: 8px;
+    gap: 40px;
     justify-content: center;
   }
 
   .auth-button {
-    width: 140px; 
+    width: 300px; 
     text-align: center;
   }
 }
@@ -240,6 +241,14 @@ header {
   .navigation-pill-list {
     gap: 3px; /* Further reduce gap for very small screens */
   }
+
+  .section1 {
+  }
+/* Main Title */
+.main-title {
+  font-size: 18px;
+  margin: 0 0 12px 0; /* Space between title and sub-title */
+}
 
   .header-auth {
     justify-content: center; /* Center buttons horizontally */
