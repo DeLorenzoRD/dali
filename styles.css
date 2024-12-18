@@ -149,7 +149,7 @@ header {
 }
 
 /* For phones and smaller devices */
-@media (max-width: 390px) {
+@media (max-width: 480px) {
   .title {
     font-size: 18px; /* Even smaller font for mobile devices */
   }
