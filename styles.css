@@ -1,0 +1,158 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+header {
+  width: 100%;
+  padding: 16px 32px;
+  background-color: #1E1E1E;
+  border-bottom: 1px solid #444444;
+}
+
+/* Main Header Container */
+.header-container {
+  display: flex;
+  flex-direction: column; /* Stack the rows vertically */
+  gap: 16px; /* Space between first row and second row */
+  align-items: flex-start;
+}
+
+/* Logo and Title Section (First Row) */
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo-img {
+  width: 120px; /* Adjust logo size as needed */
+  height: auto;
+}
+
+.title {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #F5F5F5;
+}
+
+/* Navigation Pills and Auth Buttons Section (Second Row) */
+.nav-and-auth {
+  display: flex;
+  flex-direction: row; /* Align Pills and Buttons in one row */
+  gap: 16px; /* Space between pills and buttons */
+  align-items: center;
+  width: 100%; /* Full width */
+  justify-content: flex-start; /* Start pills from the left */
+}
+
+/* Navigation Pills List */
+.navigation-pill-list {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap; /* Allow wrapping of pills on smaller screens */
+}
+
+/* Individual Navigation Pills */
+.navigation-pill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  background-color: transparent; /* Transparent background for Pills */
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Active Pill (Pill 1) */
+.navigation-pill.active {
+  background-color: #444444; /* Background color when selected */
+  color: #F5F5F5; /* Text color when selected */
+}
+
+/* Auth Buttons Section */
+.header-auth {
+  display: flex;
+  gap: 12px;
+  margin-left: auto; /* Push buttons to the right */
+}
+
+/* Individual Auth Buttons */
+.auth-button {
+  padding: 8px 16px;
+  background-color: #303030;
+  border: 1px solid #949494;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.auth-button:hover {
+  background-color: #F5F5F5;
+  color: #1E1E1E;
+  border: 1px solid #1E1E1E;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+  .header-container {
+    padding: 16px;
+  }
+
+  .logo-title {
+    flex-direction: column; /* Stack logo and title vertically on smaller screens */
+    align-items: flex-start;
+  }
+
+  .title {
+    font-size: 20px; /* Slightly smaller font size for mobile */
+  }
+
+  .nav-and-auth {
+    flex-direction: column; /* Stack pills and buttons vertically */
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .navigation-pill-list {
+    justify-content: center; /* Center pills on smaller screens */
+    width: 100%;
+  }
+
+  .header-auth {
+    width: 100%;
+    margin-left: 0; /* Remove margin to align with pills */
+    gap: 8px;
+  }
+
+  .auth-button {
+    width: 100%; /* Make buttons full-width on smaller screens */
+    text-align: center;
+  }
+}
+
+/* For phones and smaller devices */
+@media (max-width: 480px) {
+  .title {
+    font-size: 18px; /* Even smaller font for mobile devices */
+  }
+
+  .logo-img {
+    width: 100px; /* Make the logo smaller for mobile */
+  }
+
+  .navigation-pill {
+    font-size: 14px; /* Adjust pill font size for smaller screens */
+  }
+}
