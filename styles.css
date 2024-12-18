@@ -9,7 +9,7 @@
 header {
   position: fixed;
   width: 100%;
-  padding: 16px 32px;
+  padding: 16px 16px;
   background-color: #1E1E1E;
   border-bottom: 1px solid #444444;
 }
@@ -325,6 +325,10 @@ header {
 
 /* For phones and smaller devices */
 @media (max-width: 480px) {
+  header {
+    padding: 16px 16px;
+  }
+
   .title {
     font-size: 18px; /* Even smaller font for mobile devices */
   }
