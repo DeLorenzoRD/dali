@@ -58,7 +58,7 @@ header {
 /* Navigation Pills List */
 .navigation-pill-list {
   display: flex;
-  gap: 8px;
+  gap: 16px;
   flex-wrap: wrap; /* Allow wrapping of pills on smaller screens */
 }
 
@@ -133,6 +133,7 @@ header {
   .navigation-pill-list {
     justify-content: center; /* Center pills on smaller screens */
     width: 100%;
+    gap: 12px;
   }
 
   .header-auth {
@@ -154,10 +155,14 @@ header {
   }
 
   .logo-img {
-    width: 100px; /* Make the logo smaller for mobile */
+    width: 200px; /* Make the logo smaller for mobile */
   }
 
   .navigation-pill {
     font-size: 14px; /* Adjust pill font size for smaller screens */
+  }
+  
+  .navigation-pill-list {
+    gap: 8px; /* Further reduce gap for very small screens */
   }
 }
