@@ -206,7 +206,7 @@ header {
   }
 
   .auth-button {
-    width: 100%; /* Make buttons full-width on smaller screens */
+    width: 140px;
     text-align: center;
   }
 
@@ -218,7 +218,7 @@ header {
   }
 
   .auth-button {
-    width: 100%; /* Make buttons full-width on smaller screens */
+    width: 140px; 
     text-align: center;
   }
 }
