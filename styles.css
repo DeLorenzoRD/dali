@@ -99,12 +99,74 @@ header {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   cursor: pointer;
+  width: 140px;
 }
 
 .auth-button:hover {
   background-color: #F5F5F5;
   color: #1E1E1E;
   border: 1px solid #1E1E1E;
+  width: 140px;
+}
+
+/* Styling for section 1 */
+.section1 {
+  background-color: #FFFEFB; /* Fill color */
+  width: 100%; /* Full width */
+  height: 200px; /* Height as per your requirement */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: flex-start; /* Center content horizontally */
+  padding: 32px;
+  box-sizing: border-box;
+  text-align: left; /* Center text and content inside the section */
+}
+/* Main Title */
+.main-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #2C2C2C;
+  margin: 0 0 16px 0; /* Space between title and sub-title */
+}
+
+/* Sub Title */
+.sub-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #444444; /* Lighter color for sub-title */
+  margin: 0 0 24px 0; /* Space between sub-title and buttons */
+  max-width: 800px; /* Limit the width for readability */
+}
+/* Buttons inside the section */
+.sec1-auth {
+  display: flex;
+  justify-content: flex-start; /* Center buttons horizontally */
+  align-items: center; /* Vertically center the buttons */
+  gap: 12px; /* Space between buttons */
+  margin-top: 8px; /* Add some space from the title and subtitle */
+  width: 100%; /* Full width of the section */
+}
+/* Individual Auth Buttons */
+.auth-button {
+  padding: 8px 16px;
+  background-color: #303030;
+  border: 1px solid #949494;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  width: 140px;
+}
+
+.auth-button:hover {
+  background-color: #F5F5F5;
+  color: #1E1E1E;
+  border: 1px solid #1E1E1E;
+  width: 140px;
 }
 
 /* Media Queries for Responsiveness */
@@ -146,6 +208,17 @@ header {
     width: 100%; /* Make buttons full-width on smaller screens */
     text-align: center;
   }
+
+  .sec1-auth {
+    width: 100%;
+    margin-left: 0; /* Remove margin to align with pills */
+    gap: 8px;
+  }
+
+  .auth-button {
+    width: 100%; /* Make buttons full-width on smaller screens */
+    text-align: center;
+  }
 }
 
 /* For phones and smaller devices */
@@ -163,9 +236,11 @@ header {
   }
   
   .navigation-pill-list {
-    gap: 2px; /* Further reduce gap for very small screens */
+    gap: 3px; /* Further reduce gap for very small screens */
   }
   .auth-button {
     font-size: 12px;
   }
 }
+
+
