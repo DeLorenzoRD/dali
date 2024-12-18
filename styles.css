@@ -159,13 +159,13 @@ header {
   }
 
   .navigation-pill {
-    font-size: 14px; /* Adjust pill font size for smaller screens */
+    font-size: 12px; /* Adjust pill font size for smaller screens */
   }
   
   .navigation-pill-list {
-    gap: 4px; /* Further reduce gap for very small screens */
+    gap: 2px; /* Further reduce gap for very small screens */
   }
   .auth-button {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
