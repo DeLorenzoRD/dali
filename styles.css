@@ -121,6 +121,8 @@ header {
   padding: 32px;
   box-sizing: border-box;
   text-align: left; /* Center text and content inside the section */
+  /* Add a bottom border */
+  border-bottom: 1px solid #E1E1E1; /* You can adjust the color and thickness */
 }
 /* Main Title */
 .main-title {
@@ -170,6 +172,40 @@ header {
   width: 140px;
 }
 
+/* Styling for section 2 */
+.section2 {
+  background-color: #FFFEFB; /* Fill color */
+  width: 100%; /* Full width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items:flex-start; /* Center content horizontally */
+  padding: 32px;
+  box-sizing: border-box;
+  text-align: left; /* Center text and content inside the section */
+  border-bottom: 1px solid #E1E1E1; /* You can adjust the color and thickness */
+}
+/* Main Title */
+.main-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #2C2C2C;
+  margin: 0 0 16px 0; /* Space between title and sub-title */
+}
+.image-container {
+  /* Ensure the container does not constrain the image's size */
+  width: 100%; /* Full width */
+  display: flex;
+  justify-content: center; /* Horizontally center the image */
+  align-items: center; /* Vertically center the image */
+}
+
+.panel-img {
+  /* Ensure the image is responsive and retains its aspect ratio */
+  max-width: 70%; /* The image width will scale with the container */
+  height: auto; /* Maintain the aspect ratio */
+}
 /* Media Queries for Responsiveness */
 
 /* For tablets and smaller devices */
