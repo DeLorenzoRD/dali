@@ -27,6 +27,8 @@ header {
   display: flex;
   align-items: center;
   gap: 16px;
+  justify-content: center;
+  width: 100%;
 }
 
 .logo-img {
@@ -277,11 +279,6 @@ header {
     padding: 16px;
   }
 
-  .logo-title {
-    flex-direction: column; /* Stack logo and title vertically on smaller screens */
-    align-items: flex-start;
-  }
-
   .title {
     font-size: 20px; /* Slightly smaller font size for mobile */
   }
@@ -326,7 +323,7 @@ header {
 /* For phones and smaller devices */
 @media (max-width: 480px) {
   header {
-    padding: 16px 16px;
+    padding: 16px 40px;
   }
 
   .title {
