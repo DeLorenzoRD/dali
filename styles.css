@@ -149,13 +149,13 @@ header {
 }
 
 /* For phones and smaller devices */
-@media (max-width: 480px) {
+@media (max-width: 390px) {
   .title {
     font-size: 18px; /* Even smaller font for mobile devices */
   }
 
   .logo-img {
-    width: 200px; /* Make the logo smaller for mobile */
+    width: 170px; /* Make the logo smaller for mobile */
   }
 
   .navigation-pill {
