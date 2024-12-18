@@ -7,6 +7,7 @@
 
 /* Header */
 header {
+  position: fixed;
   width: 100%;
   padding: 16px 32px;
   background-color: #1E1E1E;
@@ -113,16 +114,19 @@ header {
 .section1 {
   background-color: #FFFEFB; /* Fill color */
   width: 100%; /* Full width */
-  height: 200px; /* Height as per your requirement */
+  height: 350px; /* Height as per your requirement */
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center content vertically */
+  justify-content: flex-start; /* Center content vertically */
   align-items: flex-start; /* Center content horizontally */
   padding: 32px;
   box-sizing: border-box;
   text-align: left; /* Center text and content inside the section */
   /* Add a bottom border */
   border-bottom: 1px solid #E1E1E1; /* You can adjust the color and thickness */
+}
+.content {
+  margin-top: auto; /* 将内容推到section的底部 */
 }
 /* Main Title */
 .main-title {
@@ -206,6 +210,8 @@ header {
   max-width: 80%; /* The image width will scale with the container */
   height: auto; /* Maintain the aspect ratio */
 }
+
+
 /* Media Queries for Responsiveness */
 
 /* For tablets and smaller devices */
