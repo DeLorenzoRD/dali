@@ -7,25 +7,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script>
-    // do not allow right click action
-    document.addEventListener("contextmenu", function(event){
+    // Do not allow right-click action
+    document.addEventListener("contextmenu", function(event) {
       event.preventDefault();
     });
   </script>
 </head>
 <body>
   <header>
-    <!-- Header Container: The whole header is a flex container -->
+    <!-- Header Container -->
     <div class="header-container">
-      
-      <!-- Logo and Title Section (First Row) -->
+      <!-- Logo and Title Section -->
       <div class="logo-title">
         <img src="images/ShortTitle.png" alt="Logo" class="logo-img"> <!-- Corrected image path -->
       </div>
-      
-      <!-- Navigation Pills and Auth Buttons (Second Row) -->
+      <!-- Navigation Pills and Auth Buttons -->
       <div class="nav-and-auth">
-        <!-- Navigation Pills -->
         <div class="navigation-pill-list">
           <div class="navigation-pill active">Lighting</div>
           <div class="navigation-pill">FSS</div>
@@ -34,8 +31,6 @@
           <div class="navigation-pill">CCTV</div>
           <div class="navigation-pill">IoT</div>
         </div>
-
-        <!-- Auth Buttons -->
         <div class="header-auth">
           <button class="auth-button">Contact Us</button>
           <button class="auth-button">More</button>
@@ -61,17 +56,52 @@
     <h1 class="main-title">Front Panel</h1>
     <div class="image-container">
       <img src="images/panel.png" alt="Logo" class="panel-img">
-   </div>    
+    </div>
   </section>
 
   <!-- Section 3: Diagram -->
   <section class="section2">
-    <h1 class="main-title">DALI Lighting Function Diagram and integration into BMS</h1>
-    <h2 class="sub-title">DALI System Structure & Hierarchical Integration with FSS, HVAC, EMS, CCTV, and  IoT. </h2>
+    <h1 class="main-title">Function Diagram & Integration into BMS</h1>
+    <h2 class="sub-title">DALI System Structure & Hierarchical Integration with FSS, HVAC, EMS, CCTV, and IoT.</h2>
     <div class="image-container">
       <img src="images/diagram.png" alt="Logo" class="panel-img">
-   </div>    
+    </div>
   </section>
 
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top-btn">↑</button>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2024 De Lorenzo Smart Building Solutions. All rights reserved.</p>
+      <!--
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Contact Us</a>
+      </div>
+      -->
+    </div>
+  </footer>
+
+  <script>
+    // Get the button
+    const backToTopBtn = document.getElementById("backToTopBtn");
+
+    // When the user scrolls down 100px from the top of the document, show the button
+    window.onscroll = function() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTopBtn.style.display = "block"; // Show the button
+      } else {
+        backToTopBtn.style.display = "none"; // Hide the button
+      }
+    };
+
+    // When the user clicks on the button, scroll to the top of the document
+    backToTopBtn.onclick = function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
 </body>
 </html>
