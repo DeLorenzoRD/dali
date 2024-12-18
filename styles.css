@@ -155,7 +155,7 @@ header {
   }
 
   .logo-img {
-    width: 170px; /* Make the logo smaller for mobile */
+    width: 260px; /* Make the logo smaller for mobile */
   }
 
   .navigation-pill {
@@ -164,5 +164,8 @@ header {
   
   .navigation-pill-list {
     gap: 8px; /* Further reduce gap for very small screens */
+  }
+  .auth-button {
+    font-size: 14px;
   }
 }
