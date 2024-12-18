@@ -247,6 +247,7 @@ header {
 
   .auth-button {
     font-size: 12px;
+    width: 120px;
   }
 
   .sec1-auth {
@@ -256,5 +257,6 @@ header {
 
   .auth-button {
     font-size: 12px;
+    width: 120px;
   }
 }
