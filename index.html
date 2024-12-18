@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script>
-    // disable mouse right click operation
+    // do not allow right click action
     document.addEventListener("contextmenu", function(event){
       event.preventDefault();
     });
@@ -46,11 +46,13 @@
 
   <!-- Section 1: DALI Lighting Lab -->
   <section class="section1">
-    <h1 class="main-title">DALI Lighting Lab</h1>
-    <h2 class="sub-title">Mastering DALI Lighting: From Basics to Advanced Control Techniques for Smarter Buildings</h2>
-    <div class="sec1-auth">
-      <button class="auth-button">Course</button>
-      <button class="auth-button">Demos</button>
+    <div class="content">
+      <h1 class="main-title">DALI Lighting Lab</h1>
+      <h2 class="sub-title">Mastering DALI Lighting: From Basics to Advanced Control Techniques for Smarter Buildings</h2>
+      <div class="sec1-auth">
+        <button class="auth-button">Course</button>
+        <button class="auth-button">Demos</button>
+      </div>
     </div>
   </section>
 
@@ -59,6 +61,15 @@
     <h1 class="main-title">Front Panel</h1>
     <div class="image-container">
       <img src="images/panel.png" alt="Logo" class="panel-img">
+   </div>    
+  </section>
+
+  <!-- Section 3: Diagram -->
+  <section class="section2">
+    <h1 class="main-title">DALI Lighting Function Diagram and integration into BMS</h1>
+    <h2 class="sub-title">DALI System Structure & Hierarchical Integration with FSS, HVAC, EMS, CCTV, and  IoT. </h2>
+    <div class="image-container">
+      <img src="images/diagram.png" alt="Logo" class="panel-img">
    </div>    
   </section>
 
