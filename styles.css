@@ -242,7 +242,7 @@ header {
   }
 
   .header-auth {
-    justify-content: flex-start; /* Center buttons horizontally */
+    justify-content: center; /* Center buttons horizontally */
   }
 
   .auth-button {
@@ -251,7 +251,7 @@ header {
   }
 
   .sec1-auth {
-    justify-content: flex-start; /* Center buttons horizontally */
+    justify-content: center; /* Center buttons horizontally */
 
   }
 
