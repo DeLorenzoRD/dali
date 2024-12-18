@@ -211,6 +211,61 @@ header {
   height: auto; /* Maintain the aspect ratio */
 }
 
+/* Styling for Back to Top Button */
+.back-to-top-btn {
+  position: fixed;
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  background-color: #303030; /* Button color */
+  color: #FFFFFF; /* Text color */
+  border: none;
+  border-radius: 50%; /* Make it circular */
+  width: 50px;
+  height: 50px;
+  font-size: 24px; /* Size of the arrow */
+  display: none; /* Initially hidden */
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-top-btn:hover {
+  background-color: #F5F5F5; /* Hover background color */
+  color: #1E1E1E; /* Hover text color */
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #1E1E1E; /* Dark background color */
+  color: #FFFFFF; /* White text color */
+  padding: 20px 32px; /* Padding around the footer content */
+  text-align: center; /* Center the content */
+  width: 100%; /* Full width */
+  position: relative;
+  bottom: 0;
+}
+
+.footer-content {
+  max-width: 1200px; /* Limit the width of the content */
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+.footer-links {
+  margin-top: 10px; /* Space between the copyright and links */
+}
+
+.footer-links a {
+  color: #FFFFFF;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
 
 /* Media Queries for Responsiveness */
 
