@@ -238,9 +238,20 @@ header {
   .navigation-pill-list {
     gap: 3px; /* Further reduce gap for very small screens */
   }
+
+  .header-auth {
+    gap: 6px;
+  }
+
+  .auth-button {
+    font-size: 12px;
+  }
+
+  .sec1-auth {
+    gap: 6px;
+  }
+
   .auth-button {
     font-size: 12px;
   }
 }
-
-
