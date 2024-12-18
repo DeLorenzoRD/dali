@@ -202,6 +202,7 @@ header {
     width: 100%;
     margin-left: 0; /* Remove margin to align with pills */
     gap: 8px;
+    justify-content: center;
   }
 
   .auth-button {
@@ -213,6 +214,7 @@ header {
     width: 100%;
     margin-left: 0; /* Remove margin to align with pills */
     gap: 8px;
+    justify-content: center;
   }
 
   .auth-button {
@@ -240,7 +242,7 @@ header {
   }
 
   .header-auth {
-    gap: 6px;
+    justify-content: flex-start; /* Center buttons horizontally */
   }
 
   .auth-button {
@@ -248,7 +250,8 @@ header {
   }
 
   .sec1-auth {
-    gap: 6px;
+    justify-content: flex-start; /* Center buttons horizontally */
+
   }
 
   .auth-button {
