@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Building Header</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="page.css">
+  <script>
+    // Do not allow right-click action
+    document.addEventListener("contextmenu", function(event) {
+      event.preventDefault();
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <!-- Header Container -->
+    <div class="header-container">
+      <!-- Logo and Title Section -->
+      <div class="logo-title">
+        <img src="../images/ShortTitle2.png" alt="Logo" class="logo-img"> <!-- Corrected image path -->
+      </div>
+      <!-- Navigation Pills and Auth Buttons -->
+      <div class="nav-and-auth">
+        <div class="navigation-pill-list">
+          <div class="navigation-pill active">Lighting</div>
+          <div class="navigation-pill">FSS</div>
+          <div class="navigation-pill">HVAC</div>
+          <div class="navigation-pill">EMS</div>
+          <div class="navigation-pill">CCTV</div>
+          <div class="navigation-pill">IoT</div>
+        </div>
+        <div class="header-auth">
+          <button class="auth-button" onclick="window.open('https://delorenzoglobal.com/contact?Lang=En', '_blank')">Contact Us</button>
+          <button class="auth-button" onclick="window.open('https://delorenzoglobal.com/?Lang=En', '_blank')">More</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--
+  <main class="content">
+    <section id="syllabus">
+        <h2>Course Guideline</h2>
+        <ul>
+            <li>DALI basics: protocol, devices, functions</li>
+            <li>DALI Device Configuration: physical connection，addresses, device groups, scene </li>
+            <li>Lighting Control and Dimming: manual & half automatic & fully automatic</li>
+            <li>Scene design and management</li>
+            <li>DALI/485 Gateway</li>
+            <li>Sensors and Automation: natural and artificial lighting, occupancy, timers</li>
+            <li>System Expansion and Management: multiple DALI buses, load management</li>
+            <li>Fault diagnosis and troubleshooting</li>
+            <li>System integration (DALI-BACnet)</li>
+            <li>DALI basics: protocol, devices, functions</li>
+            <li>DALI Device Configuration: physical connection，addresses, device groups, scene </li>
+            <li>Lighting Control and Dimming: manual & half automatic & fully automatic</li>
+            <li>Scene design and management</li>
+            <li>DALI/485 Gateway</li>
+            <li>Sensors and Automation: natural and artificial lighting, occupancy, timers</li>
+            <li>System Expansion and Management: multiple DALI buses, load management</li>
+            <li>Fault diagnosis and troubleshooting</li>
+            <li>System integration (DALI-BACnet)</li>
+        </ul>
+    </section>   
+</main>
+-->
+  <main class="content">
+    <section id="syllabus">
+      <h1>Course Outline</h1>  
+        <h2>1. Basic Introduction and Installation</h2>
+          <ul class="course-list">
+            <li>
+              <span class="toggle">1.1 DALI Basics and System Overview</span>
+              <ul class="nested">
+                <li>- Overview of the DALI Protocol</li>
+                <li>- Working Principle of DALI</li>
+              </ul>
+            </li>
+            <li>
+              <span class="toggle">1.2 DALI Devices and Installation</span>
+              <ul class="nested">
+                <li>- Components, Interconnection, and Power Supply</li>
+                <li>- Wiring and Key Considerations</li>
+                <li>- Basic Commissioning</li>
+                <li>- System self-check</li>
+              </ul>
+            </li>
+          </ul>
+          <h2>2. Device Configuration and Control</h2>
+          <ul class="course-list">
+            <li>
+              <span class="toggle">2.1 DALI Device Configuration</span>
+              <ul class="nested">
+                <li>- Configuring DALI Device Addresses</li>
+                <li>- Input, Output, and Commands</li>
+                <li>- Grouping and Scene Configuration, Scene Control and Switching</li>
+              </ul>
+            </li>
+            <li>
+              <span class="toggle">2.2 DALI Lighting Control and Dimming</span>
+              <ul class="nested">
+                <li>- Manual and Automatic Dimming</li>
+                <li>- Sensor-based Lighting Automation</li>
+                <li>- Time-based Lighting Automation</li>
+                <li>- Ambient Light-based Lighting Automation</li>
+              </ul>
+            </li>
+          </ul>
+
+          <h2>3. Troubleshooting</h2>
+          <ul class="course-list">
+            <li>
+              <span class="toggle">3.1 Common DALI Faults</span>
+              <ul class="nested">
+                <li>- Signal Loss, Device Not Responding, Address Conflicts</li>
+              </ul>
+            </li>
+            <li>
+              <span class="toggle">3.2 Fault Analysis and Troubleshooting</span>
+            </li>
+          </ul>
+
+          <h2>4. Advanced Applications</h2>
+          <ul class="course-list">
+            <li>
+              <span class="toggle">4.1 Advanced Dimming</span>
+              <ul class="nested">
+                <li>- Color Temperature Adjustment</li>
+                <li>- Static and Dynamic Color Control</li>
+              </ul>
+            </li>
+            <li>
+              <span class="toggle">4.2 DALI Integration and Applications in Smart Buildings</span>
+              <ul class="nested">
+                <li>- DALI System Monitoring and Control in BMS SCADA</li>
+                <li>- Collaboration between DALI System and Other Functional Modules in BMS SCADA</li>
+              </ul>
+            </li>
+            <li>
+              <span class="toggle">4.3 Application of AI in DALI Systems</span>
+            </li>
+          </ul>
+
+        <script src="script.js"></script>
+    </section>   
+  </main>
+
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top-btn">↑</button>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2024 De Lorenzo Smart Building Solutions. All rights reserved.</p>
+      <!--
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Contact Us</a>
+      </div>
+      -->
+    </div>
+  </footer>
+
+  <script>
+    // Get the button
+    const backToTopBtn = document.getElementById("backToTopBtn");
+
+    // When the user scrolls down 100px from the top of the document, show the button
+    window.onscroll = function() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTopBtn.style.display = "block"; // Show the button
+      } else {
+        backToTopBtn.style.display = "none"; // Hide the button
+      }
+    };
+
+    // When the user clicks on the button, scroll to the top of the document
+    backToTopBtn.onclick = function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+</body>
+</html>

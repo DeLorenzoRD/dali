@@ -1,0 +1,121 @@
+/* Main content styling */
+main {
+  max-width: 800px;
+  margin: 0px auto;
+  padding: 210px 20px;
+  background-color: #FFFEFB;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.068);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /*align items to the start */
+  padding: 20px;
+  background-color: #FFFEFB;
+  border: 1px solid #FFFEFB;
+  margin: 20px 0;
+  font-family: 'Inter', sans-serif;
+
+}
+section h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #2C2C2C;
+  margin: 0 0 16px 0; /* Space between title and sub-title */
+  text-align: left;
+}
+
+section h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(248, 191, 13);
+  margin: 0 6px 6px 0; /* Space between title and sub-title */
+  text-align: left;
+}
+
+
+section li {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Style for the main course list */
+.course-list {
+  list-style-type: none;
+}
+
+/* Style for the toggle button (span) */
+.toggle {
+  cursor: pointer;
+  font-weight: bold;
+  color: #2C2C2C;
+  margin-left: 0px;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0px 0px 0px 0px; /* Space between title and sub-title */
+}
+
+/* Nested list, initially hidden */
+.nested {
+  list-style-type: none;
+  margin: 2px 2px 0px 0px; 
+  display: none;  /* Hidden by default */
+  font-size: 14px;
+  font-weight: 300;
+  color: #858484;
+}
+
+/* Style for the list items */
+li {
+  margin: 5px 50px;
+}
+
+/* Optional: Hover effect for the toggle span */
+.toggle:hover {
+  color: #0056b3;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+}
+
+/* For phones */
+@media (max-width: 480px) {
+  section h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2C2C2C;
+    margin: 0 0 0px 0; /* Space between title and sub-title */
+  }
+  
+  section h2 {
+    font-size: 14px;
+    margin: 0 2px 2px 0; /* Space between title and sub-title */
+  }
+  
+  
+  section li {
+    font-size: 14px;
+  }
+  
+  /* Style for the toggle button (span) */
+  .toggle {
+    font-size: 14px;
+    margin: 0px 0px 0px 0px; /* Space between title and sub-title */
+  }
+  
+  /* Nested list, initially hidden */
+  .nested {
+    margin: 0px 0px 0px 0px; 
+    font-size: 14px;
+  }
+  
+  /* Style for the list items */
+  li {
+    margin: 5px 10px;
+  }
+}
