@@ -323,7 +323,7 @@ header {
 /* For phones and smaller devices */
 @media (max-width: 480px) {
   header {
-    padding: 16px 40px;
+    padding: 16px 16px;
   }
 
   .title {
