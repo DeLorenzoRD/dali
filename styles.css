@@ -77,12 +77,14 @@ header {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 /* Active Pill (Pill 1) */
 .navigation-pill.active {
   background-color: #444444; /* Background color when selected */
   color: #F5F5F5; /* Text color when selected */
+  text-decoration: none;
 }
 
 /* Auth Buttons Section */
