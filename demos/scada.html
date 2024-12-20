@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Building Header</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="demos.css">
+  <script>
+    // Do not allow right-click action
+    document.addEventListener("contextmenu", function(event) {
+      event.preventDefault();
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <!-- Header Container -->
+    <div class="header-container">
+      <!-- Logo and Title Section -->
+      <div class="logo-title">
+        <img src="../images/ShortTitle2.png" alt="Logo" class="logo-img"> <!-- Corrected image path -->
+      </div>
+      <!-- Navigation Pills and Auth Buttons -->
+      <div class="nav-and-auth">
+        <div class="navigation-pill-list">
+          <a href="../index.html" class="navigation-pill active">Lighting</a>
+          <div class="navigation-pill">FSS</div>
+          <div class="navigation-pill">HVAC</div>
+          <div class="navigation-pill">EMS</div>
+          <div class="navigation-pill">CCTV</div>
+          <div class="navigation-pill">IoT</div>
+        </div>
+        <div class="header-auth">
+          <button class="auth-button" onclick="window.open('https://delorenzoglobal.com/contact?Lang=En', '_blank')">Contact Us</button>
+          <button class="auth-button" onclick="window.open('https://delorenzoglobal.com/?Lang=En', '_blank')">More</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+    <section id="description">
+    <h1>Demo - SCADA in DALI Lighting</h1>
+    <h3>In this demo, we will briefly showcase SCADA's role in DALI lighting system on three levels: DALI component, lighting system level, and building management level.</h3>
+    <p>here we don't show how, just show the feature's presence.</p>
+    <p>1. dali component level control and status reading, eg. the RGB or TC</p>
+    <p>2. lighting system level one command to multiple actuators or similar.</p>
+    <p>3. BMS's supervision on DALI's normal functionality and hihgly lumpted control.</p>
+    </section>
+    </main>
+</body>
+</html>

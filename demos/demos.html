@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Building Header</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="demos.css">
+  <script>
+    // Do not allow right-click action
+    document.addEventListener("contextmenu", function(event) {
+      event.preventDefault();
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <!-- Header Container -->
+    <div class="header-container">
+      <!-- Logo and Title Section -->
+      <div class="logo-title">
+        <img src="../images/ShortTitle2.png" alt="Logo" class="logo-img"> <!-- Corrected image path -->
+      </div>
+      <!-- Navigation Pills and Auth Buttons -->
+      <div class="nav-and-auth">
+        <div class="navigation-pill-list">
+          <a href="../index.html" class="navigation-pill active">Lighting</a>
+          <div class="navigation-pill">FSS</div>
+          <div class="navigation-pill">HVAC</div>
+          <div class="navigation-pill">EMS</div>
+          <div class="navigation-pill">CCTV</div>
+          <div class="navigation-pill">IoT</div>
+        </div>
+        <div class="header-auth">
+          <button class="auth-button" onclick="window.open('https://delorenzoglobal.com/contact?Lang=En', '_blank')">Contact Us</button>
+          <button class="auth-button" onclick="window.open('https://delorenzoglobal.com/?Lang=En', '_blank')">More</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+    <section id="description">
+    <h1>Feature Demonstration</h1>
+    <div class="card-container">
+      <div class="card">
+          <img src="..\images\installation.jpg" alt="Card Image 1">
+          <div class="card-title">Installation & Setup</div>
+          <a href="installation.html" target="_blank">Learn More</a>
+      </div>
+      <div class="card">
+          <img src="..\images\configuration.jpg" alt="Card Image 2">
+          <div class="card-title">Configuration</div>
+          <a href="configuration.html" target="_blank">Learn More</a>
+      </div>
+      <div class="card">
+          <img src="..\images\troubleshooting.jpg" alt="Card Image 3">
+          <div class="card-title">Troubleshooting</div>
+          <a href="troubleshooting.html" target="_blank">Learn More</a>
+      </div>
+      <div class="card">
+          <img src="..\images\basicautomation.jpg" alt="Card Image 4">
+          <div class="card-title">Basic Automation</div>
+          <a href="basic_automation.html" target="_blank">Learn More</a>
+      </div>
+      <div class="card">
+        <img src="..\images\scheduling.jpg" alt="Card Image 5">
+        <div class="card-title">Scheduling</div>
+        <a href="scheduling.html" target="_blank">Learn More</a>
+      </div>
+      <div class="card">
+        <img src="..\images\automation.jpg" alt="Card Image 6">
+        <div class="card-title">Advanced Automation</div>
+        <a href="advanced_automation.html" target="_blank">Learn More</a>
+      </div>
+      <div class="card">
+        <img src="..\images\scada.jpg" alt="Card Image 7">
+        <div class="card-title">SCADA in DALI</div>
+        <a href="scada.html" target="_blank">Learn More</a>
+      </div>
+      <div class="card">
+        <img src="..\images\BMS.jpg" alt="Card Image 8">
+        <div class="card-title">BMS</div>
+        <a href="bms.html" target="_blank">Learn More</a>
+      </div>
+      <div class="card">
+        <img src="..\images\AI.jpg" alt="Card Image 9">
+        <div class="card-title">AI in Lighting</div>
+        <a href="ai.html" target="_blank">Learn More</a>
+      </div>
+    </div>
+    </section>
+  </main>
+
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top-btn">↑</button>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2024 De Lorenzo Smart Building Solutions. All rights reserved.</p>
+      <!--
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Contact Us</a>
+      </div>
+      -->
+    </div>
+  </footer>
+
+</body>
+</html>
