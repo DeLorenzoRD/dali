@@ -7,6 +7,7 @@ toggles.forEach(toggle => {
     const nestedList = toggle.nextElementSibling;  // Get the nested list (ul)
 
     // Toggle the visibility of the nested list by adding/removing the "active" class
-    nestedList.style.display = nestedList.style.display === 'none' ? 'block' : 'none';
+    //nestedList.style.display = nestedList.style.display === 'none' ? 'block' : 'none';
+    nestedList.classList.toggle('active');
   });
 });
