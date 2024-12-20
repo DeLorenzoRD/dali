@@ -1,6 +1,7 @@
 /* Main content styling */
 main {
   max-width: 800px;
+  min-height: 1080px;
   margin: 0px auto;
   padding: 210px 20px;
   background-color: #FFFEFB;
@@ -17,12 +18,21 @@ section {
   border: 1px solid #FFFEFB;
   margin: 20px 0;
   font-family: 'Inter', sans-serif;
-
 }
+
 section h1 {
   font-size: 26px;
   font-weight: 700;
   color: #2C2C2C;
+  margin: 0 0 16px 0; /* Space between title and sub-title */
+  text-align: left;
+}
+
+section h3 {
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+  color: #888686;
   margin: 0 0 16px 0; /* Space between title and sub-title */
   text-align: left;
 }
@@ -49,12 +59,10 @@ section li {
 /* Style for the toggle button (span) */
 .toggle {
   cursor: pointer;
-  font-weight: bold;
-  color: #2C2C2C;
-  margin-left: 0px;
-  font-size: 16px;
-  font-weight: 400;
-  margin: 0px 0px 0px 0px; /* Space between title and sub-title */
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
 /* Nested list, initially hidden */
@@ -65,8 +73,16 @@ section li {
   font-size: 14px;
   font-weight: 300;
   color: #858484;
+  list-style-type: disc;
 }
-
+/* nested list, active */
+.nested.active {
+  display: block !important;
+}
+/* nested hide */ 
+.nested {
+  display: none;
+}
 /* Style for the list items */
 li {
   margin: 5px 50px;
@@ -75,16 +91,46 @@ li {
 /* Optional: Hover effect for the toggle span */
 .toggle:hover {
   color: #0056b3;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Media Queries for Responsiveness */
 
 /* For tablets and smaller devices */
 @media (max-width: 768px) {
+  main {
+    padding: 230px 10px;
+  }
+
+  section li {
+  }
+  
+  /* Style for the toggle button (span) */
+  .toggle {
+  }
+  
+  /* Nested list, initially hidden */
+  .nested {
+  }
+  .nested.active {
+    display: block !important;
+  }
+/* nested hide */ 
+.nested {
+  display: none;
+}
+/* Style for the list items */
+li {
+  margin: 5px 40px;
+}
+
 }
 
 /* For phones */
 @media (max-width: 480px) {
+  main {
+    padding: 240px 10px;
+  }
   section h1 {
     font-size: 18px;
     font-weight: 700;
@@ -97,6 +143,10 @@ li {
     margin: 0 2px 2px 0; /* Space between title and sub-title */
   }
   
+  section h3 {
+    font-size: 14px;
+    margin: 12px 0px 12px 0; /* Space between title and sub-title */
+  }
   
   section li {
     font-size: 14px;
@@ -105,7 +155,7 @@ li {
   /* Style for the toggle button (span) */
   .toggle {
     font-size: 14px;
-    margin: 0px 0px 0px 0px; /* Space between title and sub-title */
+    padding: 0 0px;
   }
   
   /* Nested list, initially hidden */
@@ -113,9 +163,14 @@ li {
     margin: 0px 0px 0px 0px; 
     font-size: 14px;
   }
-  
-  /* Style for the list items */
-  li {
-    margin: 5px 10px;
+  .nested.active {
+    display: block !important;
   }
+/* nested hide */ 
+.nested {
+  display: none;
+}
+/* Style for the list items */
+li {
+  margin: 5px 20px;
 }
