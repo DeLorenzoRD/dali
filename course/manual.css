@@ -1,0 +1,309 @@
+
+/* Reset some default styles */
+body, h1, h2, p, img {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faf6f1;
+    color: #444444;
+    line-height: 1.6;
+   /*  display: flex;*/
+    flex-direction: column;
+    min-height: 100vh;
+}
+main h1{
+    text-align: center;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #F6F1EB;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 0rem;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.logo {
+    max-height: 50px;
+    width: auto;
+}
+
+.title-nav-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Take up the remaining space */
+}
+
+.title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        max-height: 40px;
+    }
+
+    .title {
+        font-size: 1.25rem;
+    }
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1.3rem;
+}
+
+nav ul li a {
+    color: #444444;
+    text-decoration:none;
+    font-weight: normal;
+}
+
+nav ul a p {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    text-decoration: underline; /* Highlight the active link */
+}
+
+/* Main content styling */
+main {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: #faf6f1;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /*align items to the start */
+    padding: 20px;
+    background-color: #faf6f1;
+    border: 1px solid #e6e6e6;
+    margin: 20px 0;
+}
+
+section h2 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+section p, section u1{
+    font-size: 1rem;
+    text-align: left;
+}
+
+section u1 {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto 0; /*CENTER the image and add some margin on top*/
+    display: block;
+}
+
+
+
+@media (max-width: 768px) {
+    main {
+        padding: 230px 10px;
+      }
+    section {
+        padding: 15px;
+    }
+
+    section h2 {
+        font-size: 1.1rem;
+    }
+
+    section p {
+        font-size: 0.9rem;
+    }
+}
+
+.labs-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.labs-container a {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.labs-container img {
+    width: 100%;
+    height: auto;
+    max-width: 200px; /* Adjust the size as needed */
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+ul ol{
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* For phones */
+@media (max-width: 480px) {
+    main {
+      padding: 240px 20px;
+    }
+    main h1 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #2C2C2C;
+    }
+  }
+
+/* Back to top button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(126, 124, 122); 
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+.back-to-top:hover {
+    background-color: rgb(66, 65, 64); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #faf6f1;
+    color: #444444;
+    margin-top: 20px;
+}
+
+/*
+#structure {
+    width: 100%;
+    max-width: 96.5%;
+}
+*/
+.gallery-container {
+    position: relative;
+    max-width: 100%;
+}
+
+.slides {
+    display: flex;
+    overflow: hidden;
+}
+
+.slides img {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.module-container {
+    display: flex;
+    flex-direction:row;
+    align-items: center; /* 垂直居中对齐 */
+    text-align: center; /* 文本居中对齐 */
+    flex-wrap: wrap;
+}
+
+.module-container img {
+    max-width: 100%; /* 根据需要调整图片大小 */
+    height: auto;
+    max-width: 12rem; /* Adjust the size as needed */
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px; /* 图片与文字之间的间距 */
+}
+
+.module-container p {
+    margin: 0;
+    padding: 0;
+    align-items: center; /* 垂直居中对齐 */
+    text-align: center; /* 文本居中对齐 */
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; 可根据需要调整高度 */
+  }
+  
+  video {
+    max-width: 70%; /* 确保视频不会超出容器宽度 */
+    height: auto;
+  }

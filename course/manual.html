@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Building Header</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="course.css">
+  <link rel="stylesheet" href="manual.css">
+  <script>
+    // Do not allow right-click action
+    document.addEventListener("contextmenu", function(event) {
+      event.preventDefault();
+    });
+  </script>
+</head>
+<body>
+
+    <main class="content">
+        <h1>Experiment Manual Template</h1>
+
+        <section id="m_intro">
+            <h2>Introduction</h2>
+            <ul>
+                <li>Provide Context</li>
+                <li>Explain the Theory</li>
+                <li>Review Previous Work</li>
+            </ul>
+        </section>
+
+        <section id="m_obj">
+            <h2>Objective</h2>
+            <ul>
+                <li>Defines the Purpose</li>
+                <li>Sets the Focus</li>
+                <li>Clarifies the Scope</li>
+            </ul>
+        </section>
+
+        <section id="m_modules">
+            <h2>Components</h2>
+            <ul>
+                The components and quantities used in this experiment are listed here. Links lead users to more information on component usage and specifications.
+                <a href="DLCP_datasheet.pdf" target="_blank">
+                    <li>DL 2501T01  * 1</li>
+                </a>
+                <a href="DLCP_datasheet.pdf" target="_blank">
+                    <li>DL 2501T02  * 2</li>
+                </a>
+                <a href="DLCP_datasheet.pdf" target="_blank">
+                    <li>DL 2501T03  * 1</li>
+                </a>
+            </ul>
+        </section>
+
+        <section id="m_preparaton">
+            <h2>Before Starting</h2>
+            <ul>This section guides users to prepare and setup environment and components, following safety guidelines.</ul>
+            <ol>
+                <li>Check the power supply.</li>
+                <li>Connect the circuit.</li>
+                <li>etc</li>
+            </ol>
+        </section>
+        <section id="m_preparaton">
+            <h2>Wiring Guide</h2>
+            <ul>When users have difficulty wiring themselves, they can be helped here.</ul>
+            <img src="pic/wr_demo.png" alt="WIRING_M01_C01_E01">
+        </section>
+
+        <section id="m_steps">
+            <h2>Experiment Procedures and Results</h2>
+            <ul>This section describes the steps followed and the outcomes observed during the experiment.</ul>
+            <ol>
+                <li>
+                    First, ...
+                </li>
+                <li>
+                    Second, ...
+                </li>
+                <li>...</li>
+                <li>
+                    For complex operations, videos will help to better understand.
+                    <div class="video-container">
+                        <video autoplay muted loop>
+                            <source src="pic/videodemo.webm" type="video/webm" />
+                        </video>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <section id="m_end">
+            <h2>Before Leaving</h2>
+            <ul>This section helps maintain a safe and organized laboratory environment and ensures that the lab is ready for the next user or session. </ul>
+        </section>
+    
+    </main>
+   <!-- Back to Top Button -->
+   <button id="backToTopBtn" class="back-to-top-btn">↑</button>
+  
+   <!-- Footer -->
+   <footer class="footer">
+     <div class="footer-content">
+       <p>&copy; 2024 De Lorenzo Smart Building Solutions. All rights reserved.</p>
+       <!--
+       <div class="footer-links">
+         <a href="#">Privacy Policy</a>
+         <a href="#">Terms of Service</a>
+         <a href="#">Contact Us</a>
+       </div>
+       -->
+     </div>
+   </footer>
+ 
+   <script>
+     // Get the button
+     const backToTopBtn = document.getElementById("backToTopBtn");
+ 
+     // When the user scrolls down 100px from the top of the document, show the button
+     window.onscroll = function() {
+       if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+         backToTopBtn.style.display = "block"; // Show the button
+       } else {
+         backToTopBtn.style.display = "none"; // Hide the button
+       }
+     };
+ 
+     // When the user clicks on the button, scroll to the top of the document
+     backToTopBtn.onclick = function() {
+       window.scrollTo({ top: 0, behavior: 'smooth' });
+     };
+   </script>
+</body>
+</html>
