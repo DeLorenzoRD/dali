@@ -183,6 +183,8 @@ header {
   width: 140px;
 }
 
+
+
 /* Styling for section 2 */
 .section2 {
   background-color: #FFFEFB; /* Fill color */
@@ -195,6 +197,10 @@ header {
   box-sizing: border-box;
   text-align: left; /* Center text and content inside the section */
   border-bottom: 1px solid #E1E1E1; /* You can adjust the color and thickness */
+}
+video {
+  max-width: 70%;  /* prevent dimention overflow */
+  max-height: 100%;  /* prevent dimention overflow  */
 }
 /* Main Title */
 .main-title {
@@ -360,6 +366,10 @@ header {
   .section1 {
     height: 420px; /* Height as per your requirement */
   }
+video {
+    max-width: 100%;  /* 防止视频超出容器的宽度 */
+    max-height: 100%;  /* 防止视频超出容器的高度 */
+  }
 /* Main Title */
 .main-title {
   font-size: 18px;
@@ -382,6 +392,10 @@ header {
   .sec1-auth {
     justify-content: center; /* Center buttons horizontally */
 
+  }
+video {
+    max-width: 100%;  /* 防止视频超出容器的宽度 */
+    max-height: 100%;  /* 防止视频超出容器的高度 */
   }
 
   .auth-button {
