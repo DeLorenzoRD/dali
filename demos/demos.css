@@ -77,6 +77,34 @@ main h3 {
 .card a:hover {
   background-color: #0056b3;
 }
+.secdemo-auth {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Vertically center the buttons */
+  gap: 40px; /* 控制按钮之间的间距 */
+  margin-bottom: 8px; /* 控制与下面的视频框的距离 */
+  width: 100%; /* Full width of the section */
+}
+
+.secdemo-auth .auth-button {
+  padding: 8px 16px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #303030;
+  border: 1px solid #949494;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 140px;
+}
+
+.secdemo-auth .auth-button:hover {
+  background-color: #F5F5F5;
+  color: #1E1E1E;
+  border: 1px solid #1E1E1E;
+}
 /* Media Queries for Responsiveness */
 
 /* For tablets and smaller devices */
