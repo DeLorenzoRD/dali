@@ -12,6 +12,7 @@ header {
   padding: 16px 32px;
   background-color: #1E1E1E;
   border-bottom: 1px solid #444444;
+  margin-top:0;
 }
 
 /* Main Header Container */
@@ -115,6 +116,7 @@ header {
   width: 140px;
 }
 
+
 /* Styling for section 1 */
 .section1 {
   background-color: #FFFEFB; /* Fill color */
@@ -173,6 +175,7 @@ header {
   width: 140px;
   text-align: center;
   text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 
@@ -283,6 +286,11 @@ video {
 
 
 /* Media Queries for Responsiveness */
+@media (max-width: 943px){
+  .section1 {
+    height: 400px;
+  }
+} 
 
 /* For tablets and smaller devices */
 @media (max-width: 768px) {
@@ -323,6 +331,9 @@ video {
     width: 140px;
   }
 
+  .section1 {
+    height: 430px;
+  }
   .sec1-auth {
     width: 100%;
     margin-left: 0; /* Remove margin to align with pills */
@@ -340,6 +351,12 @@ video {
     width: 140px;
   }
 }
+
+@media (max-width: 643px){
+  .section1 {
+    height: 500px;
+  }
+} 
 
 /* For phones and smaller devices */
 @media (max-width: 480px) {
@@ -364,7 +381,7 @@ video {
   }
 
   .section1 {
-    height: 420px; /* Height as per your requirement */
+    height: 400px; /* Height as per your requirement */
   }
 video {
     max-width: 100%;  /* 防止视频超出容器的宽度 */
@@ -410,3 +427,9 @@ video {
     font-size: 12px;
   }
 }
+
+@media (max-width: 470px){
+  .section1 {
+    height: 450px;
+  }
+} 
