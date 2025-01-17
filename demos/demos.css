@@ -30,8 +30,8 @@ main h3 {
   font-size: 20px;
   font-weight: 300;
   color: #696868;
-  text-align: left;
-  padding: 0px 0px 50px 0px;
+  text-align:justify;
+  padding: 0px 0px 20px 0px;
 }
 
 .card-container {
@@ -84,6 +84,7 @@ main h3 {
   gap: 40px; /* 控制按钮之间的间距 */
   margin-bottom: 8px; /* 控制与下面的视频框的距离 */
   width: 100%; /* Full width of the section */
+  padding: 0px 0px 20px 0px;
 }
 
 .secdemo-auth .auth-button {
