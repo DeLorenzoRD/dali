@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DALI Lighting Demo - Advanced Automation</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../test.css">
   <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="demos.css">
   <script>
@@ -16,21 +17,19 @@
 </head>
 <body>
   <header>
-    <!-- Header Container -->
     <div class="header-container">
-      <!-- Logo and Title Section -->
       <div class="logo-title">
-        <img src="../images/ShortTitle2.png" alt="Logo" class="logo-img"> <!-- Corrected image path -->
+        <img src="../images/ShortTitle2.png" alt="Logo" class="logo-img">
       </div>
-      <!-- Navigation Pills and Auth Buttons -->
       <div class="nav-and-auth">
         <div class="navigation-pill-list">
+          <a href="../smart_building.html" class="navigation-pill">Smart Building</a>
           <a href="../index.html" class="navigation-pill active">Lighting</a>
-          <div class="navigation-pill">FSS</div>
-          <div class="navigation-pill">HVAC</div>
-          <div class="navigation-pill">EMS</div>
-          <div class="navigation-pill">CCTV</div>
-          <div class="navigation-pill">IoT</div>
+          <a href="../FSS.html" class="navigation-pill">FSS</a>
+          <a href="../HVAC.html" class="navigation-pill">HVAC</a>
+          <a href="../EMS.html" class="navigation-pill">EMS</a>
+          <a href="../CCTV.html" class="navigation-pill">CCTV</a>
+          <a href="../IOT.html" class="navigation-pill">IoT</a>
         </div>
         <div class="header-auth">
           <button class="auth-button" onclick="window.open('https://delorenzoglobal.com/contact?Lang=En', '_blank')">Contact Us</button>
@@ -41,14 +40,31 @@
   </header>
 
   <main class="content">
-    <section id="description">
+    <section id="description" style="border-bottom: none;">
     <h1>Demo - Advanced Automation with Node-RED</h1>
     <h3>In this demo, we will briefly showcase how to design and implement an advanced automation with multiple inputs and outputs with the well-known flow-based development tool Node-RED.</h3>
+    <div class="secdemo-auth">
+      <a href="../course/course.html" class="auth-button" target="_self">Course</a>
+      <a href="../demos/demos.html" class="auth-button" target="_self">Demos</a>
+    </div>
     <h2>Script</h2>
     <p>1. Intro to the system composition.</p>
     <P>2. Design and implement automation with Node-RED flow.</P>
     <p>3. Show the mini showroom's performance.</p>
     </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2024 De Lorenzo Smart Building Solutions. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" onclick="scrollToTop()">↑</button>
+    
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="../scripts.js"></script>
 </body>
 </html>
