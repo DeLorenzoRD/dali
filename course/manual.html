@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Manual Template</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../test.css">
   <link rel="stylesheet" href="course.css">
   <link rel="stylesheet" href="manual.css">
   <script>
@@ -42,9 +42,9 @@
             <h2>Components</h2>
             <ul>
                 The components and quantities used in this experiment are listed here. Links lead users to more information on component usage and specifications.
-                <li>1 * <a href="DLCP_datasheet.pdf" target="_blank">DL 2501T01</a></li>
-                <li>2 * <a href="DLCP_datasheet.pdf" target="_blank">DL 2501T02</a></li>
-                <li>1 * <a href="DLCP_datasheet.pdf" target="_blank">DL 2501T03</a></li>
+                <li>1 * <a href="DLCP_datasheet.pdf" target="_blank" style="color: #1b6ad1; text-decoration: none;" onmouseover="this.style.color='#85b8fa';" onmouseout="this.style.color='#1b6ad1';">DL 2501T01</a></li>
+                <li>2 * <a href="DLCP_datasheet.pdf" target="_blank" style="color: #1b6ad1; text-decoration: none;" onmouseover="this.style.color='#85b8fa';" onmouseout="this.style.color='#1b6ad1';">DL 2501T02</a></li>
+                <li>1 * <a href="DLCP_datasheet.pdf" target="_blank"style="color: #1b6ad1; text-decoration: none;" onmouseover="this.style.color='#85b8fa';" onmouseout="this.style.color='#1b6ad1';">DL 2501T03</a></li>
             </ul>
         </section>
         <!--
@@ -111,8 +111,6 @@
         </section>
     
     </main>
-   <!-- Back to Top Button -->
-   <button id="backToTopBtn" class="back-to-top-btn">↑</button>
   
    <!-- Footer -->
    <footer class="footer">
@@ -128,23 +126,10 @@
      </div>
    </footer>
  
-   <script>
-     // Get the button
-     const backToTopBtn = document.getElementById("backToTopBtn");
- 
-     // When the user scrolls down 100px from the top of the document, show the button
-     window.onscroll = function() {
-       if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-         backToTopBtn.style.display = "block"; // Show the button
-       } else {
-         backToTopBtn.style.display = "none"; // Hide the button
-       }
-     };
- 
-     // When the user clicks on the button, scroll to the top of the document
-     backToTopBtn.onclick = function() {
-       window.scrollTo({ top: 0, behavior: 'smooth' });
-     };
-   </script>
+  <!-- Back to Top Button -->
+  <button class="back-to-top" onclick="scrollToTop()">↑</button>
+  
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="../scripts.js"></script>
 </body>
 </html>
