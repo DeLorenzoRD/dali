@@ -148,6 +148,15 @@
     text-align: justify;
     /*max-width: 800px;  Limit the width for readability */
   }
+
+  .sub-title2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(248, 191, 13);
+    margin: 10px 0 0px 0; /* Space between sub-title and buttons */
+    text-align: justify;
+  }
   
 /* Popup Window */
 .video-popup {
