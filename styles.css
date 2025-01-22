@@ -5,9 +5,17 @@
   box-sizing: border-box;
 }
 
+/* Set a basic font family and some global styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: #1E1E1E;
+  line-height: 1.6;
+}
+
 /* Header */
 header {
-  position: fixed;
+  position:static;
   width: 100%;
   padding: 16px 32px;
   background-color: #1E1E1E;
@@ -115,6 +123,11 @@ header {
   border: 1px solid #1E1E1E;
   width: 140px;
 }
+
+
+
+
+
 
 
 /* Styling for section 1 */
