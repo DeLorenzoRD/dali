@@ -252,9 +252,23 @@
   /* 确保 image-container 自适应 main 宽度 */
 .image-container {
     width: 90%;
-    text-align: center; /* 使图片水平居中 */
+    text-align: left; /* 使图片水平居中 */
     margin: 0 auto; /* 自动设置左右边距，确保居中 */
     margin-bottom: 10px;
+  }
+  .image-QR img {
+    display: block;
+    width: 12%;
+    text-align: left; /* 使图片水平居中 */
+    margin:0 auto;/* 自动设置左右边距，确保居中 */
+    margin-bottom: 0px;
+  }
+  .note{
+    font-size: 14px;
+    font-style: italic;
+    color:#949494;
+    text-align: center; /* 使图片水平居中 */
+    margin-top: 0;
   }
   
   /* 让图片自适应容器的宽度，同时保持原始比例 */
@@ -355,20 +369,24 @@
      .sub-title {
         font-size: 16px;
       }
-      
+      .sub-title2 {
+        font-size: 16px;
+      }
+    
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
+  /* Styles for mobile portrait mode */
     header {
-      padding: 16px 16px;
+      padding: 0px 0px;
     }
   
     .logo-img {
-      width: 260px; /* Make the logo smaller for mobile */
+      width: 220px; /* Make the logo smaller for mobile */
     }
   
     .navigation-pill {
-      font-size: 12px; /* Adjust pill font size for smaller screens */
+      font-size: 14px; /* Adjust pill font size for smaller screens */
     }
     
     .navigation-pill-list {
@@ -379,15 +397,15 @@
         display: flex;
         justify-content: center; /* Center buttons horizontally */
         align-items: center; /* Vertically center the buttons */
-        gap: 12px;
+        gap: 50px;
     }
     .auth-button {
         text-align: center;
-        font-size: 12px;
+        font-size: 14px;
         width: 120px;
     }
     .auth-button:hover {
-        font-size: 12px;
+        font-size: 14px;
         width: 120px;
     }
 
@@ -395,30 +413,45 @@
         display: flex;
         justify-content: center; /* Center buttons horizontally */
         align-items: center; /* Vertically center the buttons */
-        gap: 12px; /* Space between buttons */
+        gap: 50px; /* Space between buttons */
         margin-top: 8px; /* Add some space from the title and subtitle */
-        margin-bottom: 12px;
+        margin-bottom: 8px;
         width: 100%; /* Full width of the section */
       }
     .auth-button {
-        font-size: 12px;
+        font-size: 14px;
         width: 120px;
       }
       .auth-button:hover {
-        font-size: 12px;
+        font-size: 14px;
         width: 120px;
       }
     main {
-        padding: 10px 10px;
+        padding: 10px 20px;
+        min-height: 500px;
     }
+
     .main-title {
         font-size: 16px;
     }
     /* Sub Title */
     .sub-title {
-        font-size: 12px;
+        font-size: 14px;
     }
+    .sub-title2 {
+      font-size: 14px;
+  }
 
+  .image-QR img {
+    display: none;
+  }
+  .note{
+    display: none;
+  }
+
+  .footer {
+    font-size: 14px;
+  }
       
   }
   
