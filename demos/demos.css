@@ -111,6 +111,11 @@ main h3 {
   color: #1E1E1E;
   border: 1px solid #1E1E1E;
 }
+
+.video-frame {
+  width: 900px; /* 设置宽度 */
+  height: 506px; /* 设置高度 */
+}
 /* Media Queries for Responsiveness */
 
 /* For tablets and smaller devices */
@@ -150,31 +155,46 @@ main h3 {
 }
 
 /* For phones */
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .header-auth{
     width: 100%;
     gap: 40px;
   }
   .auth-button {
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     width: 120px;
   }
   .auth-button:hover {
-    font-size: 12px;
+    font-size: 14px;
     width: 120px;
   }
   main {
-    padding: 240px 20px;
+    padding: 5px 20px;
+    min-height: 500px;
   }
-  main h1 {
-    font-size: 18px;
+  section h1 {
+    font-size: 16px;
     font-weight: 700;
     color: #2C2C2C;
   }
-  main h3 {
+  section h2 {
     font-size: 14px;
   }
+  section h3 {
+    font-size: 14px;
+  }
+  .card {
+    font-size: 14px;
+  }
+  .card-title{
+    font-size:14px;
+  }
+  .card-title1{
+    font-size:14px;
+  }
+
+
   .secdemo-auth {
     width: 100%;
     margin-left: 0; /* Remove margin to align with pills */
@@ -183,12 +203,17 @@ main h3 {
   }
   .secdemo-auth .auth-button {
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     width: 120px;
   }
   .secdemo-auth .auth-button:hover {
-    font-size: 12px;
+    font-size: 14px;
     width: 120px;
+  }
+
+  .video-frame {
+    width: 100%; /* 设置宽度 */
+    height: auto; /* 设置高度 */
   }
 
 }
