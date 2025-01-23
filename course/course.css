@@ -134,12 +134,13 @@ li {
 }
 
 /* For phones */
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   main {
-    padding: 240px 10px;
+    padding: 5px 10px;
+    min-height: 500px;
   }
   section h1 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     color: #2C2C2C;
     margin: 0 0 0px 0; /* Space between title and sub-title */
