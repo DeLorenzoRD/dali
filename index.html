@@ -1,128 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DALI Lighting - Demo</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../test.css">
-  <link rel="stylesheet" href="demos.css">
-  <script>
-    // Do not allow right-click action
-    document.addEventListener("contextmenu", function(event) {
-      event.preventDefault();
-    });
-  </script>
-</head>
-<body>
-  <header>
-    <div class="header-container">
-      <div class="logo-title">
-        <img src="../images/ShortTitle2.png" alt="Logo" class="logo-img">
-      </div>
-      <div class="nav-and-auth">
-        <div class="navigation-pill-list">
-          <a href="../smart_building.html" class="navigation-pill">Smart Building</a>
-          <a href="../index.html" class="navigation-pill active">Lighting</a>
-          <a href="../FSS.html" class="navigation-pill">FSS</a>
-          <a href="../HVAC.html" class="navigation-pill">HVAC</a>
-          <a href="../EMS.html" class="navigation-pill">EMS</a>
-          <a href="../CCTV.html" class="navigation-pill">CCTV</a>
-          <a href="../IoT.html" class="navigation-pill">IoT</a>
-        </div>
-        <div class="header-auth">
-          <button class="auth-button" onclick="window.open('https://delorenzoglobal.com/contact?Lang=En', '_blank')">Contact Us</button>
-          <button class="auth-button" onclick="window.open('https://delorenzoglobal.com/?Lang=En', '_blank')">More</button>
-        </div>
-      </div>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Building - DALI Lighting</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="test.css">
+  </head>
 
-  <main class="content">
-    <section id="description">
-    <h1>Feature Demonstration</h1>
-    <h2>Attention: 
-      <br>The videos of demo highlighted in red are in preparation. Since the prototype is not yet ready, the videos do not include hardware-related sections now, which will be updated later.</h2>
-    <h3>Learn more about the <a href="../course/course.html" target="_self" style="color: #1b6ad1; text-decoration: none;" onmouseover="this.style.color='#85b8fa';" onmouseout="this.style.color='#1b6ad1';">course outline</a>.</h3>
-    <div class="card-container">
-      <div class="card">
-        <img src="..\images\smart_building.png" alt="Card Image 0.1">
-        <div class="card-title">DL Smart Building</div>
-        <a href="smartB_intro.html" target="_self">Learn More</a>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo-title">
+          <img src="images/ShortTitle2.png" alt="Logo" class="logo-img">
+        </div>
+        <div class="nav-and-auth">
+          <div class="navigation-pill-list">
+            <a href="smart_building.html" class="navigation-pill">Smart Building</a>
+            <a href="index.html" class="navigation-pill active">Lighting</a>
+            <a href="FSS.html" class="navigation-pill">FSS</a>
+            <a href="HVAC.html" class="navigation-pill">HVAC</a>
+            <a href="EMS.html" class="navigation-pill">EMS</a>
+            <a href="CCTV.html" class="navigation-pill">CCTV</a>
+            <a href="IoT.html" class="navigation-pill">IoT</a>
+          </div>
+          <div class="header-auth">
+            <button class="auth-button" onclick="window.open('https://delorenzoglobal.com/contact?Lang=En', '_blank')">Contact Us</button>
+            <button class="auth-button" onclick="window.open('https://delorenzoglobal.com/?Lang=En', '_blank')">More</button>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <img src="..\images\whatsdali.jpeg" alt="Card Image 0.2">
-        <div class="card-title">What's DALI Lighting</div>
-        <a href="dali_intro.html" target="_self">Learn More</a>
-      </div>
-      <div class="card">
-          <img src="..\images\installation.jpg" alt="Card Image 1">
-          <div class="card-title">Installation & Setup</div>
-          <a href="installation.html" target="_self">Learn More</a>
-      </div>
-      <div class="card">
-          <img src="..\images\configuration.jpg" alt="Card Image 2">
-          <div class="card-title">Configuration</div>
-          <a href="configuration.html" target="_self">Learn More</a>
-      </div>
-      <div class="card">
-          <img src="..\images\troubleshooting.jpg" alt="Card Image 3">
-          <div class="card-title">Troubleshooting</div>
-          <a href="troubleshooting.html" target="_self">Learn More</a>
-      </div>
-      <div class="card">
-          <img src="..\images\basicautomation.jpg" alt="Card Image 4">
-          <div class="card-title1">Basic Automation</div>
-          <a href="basic_automation.html" target="_self">Learn More</a>
-      </div>
-      <div class="card">
-        <img src="..\images\scheduling.jpg" alt="Card Image 5">
-        <div class="card-title1">Scheduling</div>
-        <a href="scheduling.html" target="_self">Learn More</a>
-      </div>
-      <div class="card">
-        <img src="..\images\automation.jpg" alt="Card Image 6">
-        <div class="card-title1">Advanced Automation</div>
-        <a href="advanced_automation.html" target="_self">Learn More</a>
-      </div>
-      <div class="card">
-        <img src="..\images\scada.jpg" alt="Card Image 7">
-        <div class="card-title">SCADA in DALI</div>
-        <a href="scada.html" target="_self">Learn More</a>
-      </div>
-      <div class="card">
-        <img src="..\images\BMS.jpg" alt="Card Image 8">
-        <div class="card-title1">BMS</div>
-        <a href="bms.html" target="_self">Learn More</a>
-      </div>
-      <div class="card">
-        <img src="..\images\AI.jpg" alt="Card Image 9">
-        <div class="card-title1">AI in Lighting</div>
-        <a href="ai.html" target="_self">Learn More</a>
-      </div>
-    </div>
-    </section>
-  </main>
-  
-  <!-- Footer -->
+    </header>
+
+    <main class="content">
+      <section id="section1">
+        <h1 class="main-title">DALI Lighting Lab</h1>
+        <h2 class="sub-title">DALI Lighting Lab is a cutting-edge training center focused on advancing lighting technology studies. 
+          It specializes in 
+          <span style="font-weight: bold;">installation</span>, 
+          <span style="font-weight: bold;">troubleshooting and maintenance</span>, 
+          <span style="font-weight: bold;">automation design</span>, 
+          and 
+          <span style="font-weight: bold;">real-system implementation</span> of energy-efficient and smart lighting solutions, 
+          aiming to cultivate skilled engineers and technicians in the lighting sector of the smart building industry.</h2>
+        
+        <h2 class="sub-title">
+          Click to learn more about the 
+          <a href="#" onclick="openVideo('popup1', 'videoPlayer1')" style="color: #1b6ad1; text-decoration: none;" onmouseover="this.style.color='#85b8fa';" onmouseout="this.style.color='#1b6ad1';">DALI Lighting System</a>
+          <div class="overlay" id="overlay1"></div>
+          <div class="video-popup" id="popup1">
+            <button class="close-btn" onclick="closeVideo('popup1')">X</button>
+            <div class="video-container">
+              <iframe id="videoPlayer1" src="https://www.youtube.com/embed/SzfUe0Tvhqc?enablejsapi=1&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          and 
+          <a href="#" onclick="openVideo('popup2', 'videoPlayer2')" style="color: #1b6ad1; text-decoration: none;" onmouseover="this.style.color='#85b8fa';" onmouseout="this.style.color='#1b6ad1';">DL Smart Building Solutions.</a>
+          <div class="overlay" id="overlay2"></div>
+          <div class="video-popup" id="popup2">
+            <button class="close-btn" onclick="closeVideo('popup2')">X</button>
+            <div class="video-container">
+              <iframe id="videoPlayer2" src="https://www.youtube.com/embed/T2NhKqXrrxI?si=BvTFkL5YDm7Tk50n" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </h2>
+
+        <h2 class="sub-title">Please review the course outline and some demonstration videos showcasing features to learn more.</h2>
+        <div class="sec1-auth">
+          <a href="course/course.html" class="auth-button" target="_self">Course</a>
+          <a href="demos/demos.html" class="auth-button" target="_self">Demos</a>
+        </div>
+        <div class="image-QR">
+          <img src="images/QR.png" alt="Logo" class="index-img">
+        </div>
+        <p class="note">Welcome to browse on your mobile device! Simply scan the QR code below.</p>
+      </section>
+      
+      <section id="section2">
+        <h1 class="main-title">Product Concept Prototype</h1>
+        <h2 class="sub-title">All DALI devices, except for sensors, are installed on the operation panel for students to complete system installation based on different configurations. In addition to the operation panel, the product offers a visualization space to better observe the automation performance. Curious about what the lab looks like? Check out the  
+          <a href="#" onclick="openVideo('popup3', 'videoPlayer3')" style="color: #1b6ad1; text-decoration: none;" onmouseover="this.style.color='#85b8fa';" onmouseout="this.style.color='#1b6ad1';">3D model</a>
+          <div class="overlay" id="overlay3"></div>
+          <div class="video-popup" id="popup3">
+            <button class="close-btn" onclick="closeVideo('popup3')">X</button>
+            <div class="video-container">
+              <iframe id="videoPlayer3" src="https://www.youtube.com/embed/SsEoC7qgHgU?si=8F95AzdlNAC3wuv1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        !</h2>
+        <div class="image-container">
+          <img src="images/panel.png" alt="Logo" class="index-img">
+        </div>
+      </section>
+
+      <section id="section3">
+        <h1 class="main-title">Function Diagram & Integration into BMS</h1>
+        <h2 class="sub-title">DALI System Structure & Hierarchical Integration with FSS, HVAC, EMS, CCTV, and IoT.</h2>
+        <div class="image-container">
+          <img src="images/diagram.png" alt="Logo" class="index-img">
+        </div>
+      </section>
+
+      <section id="section4">
+        <h1 class="main-title">Progress <span style="color: red;">(Internal Use Only)</span></h1>
+        <h2 class="sub-title">Last update: 21st Jan, 2025</h2>
+        <div class="image-container">
+          <img src="images/progress2.png" alt="Logo" class="index-img">
+        </div>
+      </section>
+
+      <section id="section4" style="border-bottom: none;">
+        <h1 class="main-title">Meet the Team <span style="color: red;">(Internal Use Only)</span></h1>
+        <div class="image-container">
+          <img src="images/team.png" alt="Logo" class="index-img">
+        </div>
+      </section>
+
+      <!-- Back to Top Button -->
+      <button class="back-to-top" onclick="scrollToTop()">↑</button>
+      
+    </main>
+
+      <!-- Footer -->
   <footer class="footer">
     <div class="footer-content">
       <p>&copy; 2024 De Lorenzo Smart Building Solutions. All rights reserved.</p>
-      <!--
-      <div class="footer-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Contact Us</a>
-      </div>
-      -->
     </div>
   </footer>
 
-  <!-- Back to Top Button -->
-  <button class="back-to-top" onclick="scrollToTop()">↑</button>
-  
-  <script src="https://www.youtube.com/iframe_api"></script>
-  <script src="../scripts.js"></script>
-
-</body>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="scripts.js"></script>
+  </body>
 </html>
