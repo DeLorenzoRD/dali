@@ -386,7 +386,7 @@ video {
   }
 
   .navigation-pill {
-    font-size: 12px; /* Adjust pill font size for smaller screens */
+    font-size: 14px; /* Adjust pill font size for smaller screens */
   }
   
   .navigation-pill-list {
@@ -411,11 +411,11 @@ video {
   }
 
   .auth-button {
-    font-size: 12px;
+    font-size: 14px;
     width: 120px;
   }
   .auth-button:hover {
-    font-size: 12px;
+    font-size: 14px;
     width: 120px;
   }
 
@@ -429,19 +429,19 @@ video {
   }
 
   .auth-button {
-    font-size: 12px;
+    font-size: 14px;
     width: 120px;
   }
   .auth-button:hover {
-    font-size: 12px;
+    font-size: 14px;
     width: 120px;
   }
   .footer {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
-@media (max-width: 470px){
+@media (max-width: 767px){
   .section1 {
     height: 450px;
   }
